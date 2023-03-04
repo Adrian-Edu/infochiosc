@@ -52,11 +52,17 @@ function SlidePortfolio(props) {
   return (
     <section>
       <div className="container">
-        <img
-          src={currentPortfolio[currentIndex].image}
-          className="slide-image"
-          alt="portfolio img"
-        />
+        <a
+          href={currentPortfolio[currentIndex].url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={currentPortfolio[currentIndex].image}
+            className="slide-image"
+            alt="portfolio img"
+          />
+        </a>
       </div>
     </section>
   );
